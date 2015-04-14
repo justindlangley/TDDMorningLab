@@ -8,18 +8,21 @@ namespace TDDMorningLab
 {
     public class BankAccount
     {
-        public int accountNumber
-        {
-            get
-            {
-                return accountNumber == null ? Console.WriteLine("A value must exist here");
-            }
-
-            set; }
+        public int accountNumber { get; set; }
         public string accountName { get; set; }
         public double accountBalance {get; set;}
 
-        BankAccount customer1 = new BankAccount();
+        BankAccount myCustomer = new BankAccount();
+
+        public virtual string errorMessage()
+        {
+            if myCustomer.accountNumber == null; 
+                return "Please enter a valid account number";
+        }
+        
+        
+
+        
             
     }
 }
