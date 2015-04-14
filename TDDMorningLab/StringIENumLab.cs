@@ -39,6 +39,11 @@ namespace TDDMorningLab
         {
             throw new NotImplementedException();
         }
+
+        public object LowerCaseConsonants()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

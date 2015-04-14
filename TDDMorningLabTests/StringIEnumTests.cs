@@ -64,7 +64,24 @@ namespace TDDMorningLabTests
 
                 Assert.Equal(output, answer);
 
-            }  
+            }
+            [Fact]
+            public void AreConsonantsLowerCase()
+            {
+                var input = "Short phrase";
+
+                var engine = new ThingJonathanWillBuild(input);
+                var answer = engine.LowerCaseConsonants();
+                var output = new List<char>
+                {
+                    's', 'h', 'o', 'r', 't', 
+                    'p', 'h', 'r', 'a', 's', 'e'
+                };
+
+                Assert.Equal(output, answer);
+        
+            }
+
     }
  }
     
