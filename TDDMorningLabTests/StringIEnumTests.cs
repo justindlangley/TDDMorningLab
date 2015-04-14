@@ -8,11 +8,11 @@ using Xunit;
 
 namespace TDDMorningLabTests
 {
-    public class BankAccountTests
+    public class StringIEnumTests
     {
         [Fact]
 
-        private BankAccountTests checkAccountNumber = new BankAccountTests();
+        private StringIEnumTests checkAccountNumber = new StringIEnumTests();
 
 
         public void DoesAccountNumberHaveValue()
