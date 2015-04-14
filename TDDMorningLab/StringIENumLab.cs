@@ -29,6 +29,16 @@ namespace TDDMorningLab
         {
             throw new NotImplementedException();
         }
+
+        public object AlphaOrder()
+        {
+            throw new NotImplementedException();
+        }
+
+        public object UsedOnce()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }
