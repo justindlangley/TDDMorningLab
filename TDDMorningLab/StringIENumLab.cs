@@ -27,7 +27,10 @@ namespace TDDMorningLab
 
         public object GetConsonants()
         {
-            throw new NotImplementedException();
+            string myString = "Short phrase";
+            char[] vowels = { 'a', 'A', 'e', 'E', 'I', 'i', 'O', 'o', 'U', 'u' };
+            string input = myString.ToUpper(vowels);
+            return input;
         }
 
         public object AlphaOrder()
