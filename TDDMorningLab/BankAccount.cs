@@ -8,7 +8,14 @@ namespace TDDMorningLab
 {
     public class BankAccount
     {
-        public int accountNumber { get; set; }
+        public int accountNumber
+        {
+            get
+            {
+                return accountNumber == null ? Console.WriteLine("A value must exist here");
+            }
+
+            set; }
         public string accountName { get; set; }
         public double accountBalance {get; set;}
 
