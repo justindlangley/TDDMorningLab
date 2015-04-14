@@ -16,10 +16,11 @@ namespace TDDMorningLab
 
         public virtual string errorMessage()
         {
-            if myCustomer.accountNumber == null; 
-                return "Please enter a valid account number";
+            this.accountNumber = 131; 
+                         
         }
         
+        public 
         
 
         
