@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TDDMorningLab;
 using Xunit;
 
 
@@ -10,17 +11,24 @@ namespace TDDMorningLabTests
 {
     public class StringIEnumTests
     {
+
         [Fact]
-
-        private StringIEnumTests checkAccountNumber = new StringIEnumTests();
-
-
-        public void DoesAccountNumberHaveValue()
+        public void CanFindConsantants()
         {
+            var input = "Short phrase";
 
-            int answer = checkAccountNumber.DoesAccountNumberHaveValue();
+            var engine = new ThingJonathanWillBuild(input);
 
-            Assert.Equal(answer, accountNumber);
+            var answer = engine.GetConsonants();
+
+            var output = new List<char>
+            {
+                'S', 'h', 'r', 't',
+                'p', 'h','r','s'
+            };
+            
+
+            Assert.Equal(output, answer);
 
                 //Happy path is that there is a value, and the test passes
                 //Sad path is that there is no value, or the value is not in the correct format,

@@ -6,12 +6,29 @@ using System.Threading.Tasks;
 
 namespace TDDMorningLab
 {
-    public class StringIENumLab
-    {
-        
-        
 
-        
-            
+
+
+
+    public class ThingJonathanWillBuild
+    {
+        private string input;
+
+        public ThingJonathanWillBuild(string input)
+        {
+            // TODO: Complete member initialization
+            this.input = input;
+        }
+
+
+
+
+
+
+        public object GetConsonants()
+        {
+            throw new NotImplementedException();
+        }
     }
+
 }
