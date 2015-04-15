@@ -15,7 +15,7 @@ namespace TDDMorningLabTests
         [Fact]
         public void CanFindConsantants()
         {
-            var input = "Short phrase";
+            var input = "Short";
 
             var engine = new ThingJonathanWillBuild(input);
 
@@ -23,8 +23,12 @@ namespace TDDMorningLabTests
 
             var output = new List<char>
             {
+<<<<<<< HEAD
                 'S', 'h', 'r', 't',
                 'P', 'h','r','s'
+=======
+                'S', 'h', 'r', 't'
+>>>>>>> fef6d323b40122a5e839698921f64a7471daee4b
             };
 
         }
@@ -34,18 +38,46 @@ namespace TDDMorningLabTests
         {
             var input = "Short phrase";
 
+<<<<<<< HEAD
             var engine = new ThingJonathanWillBuild(input);
 
             var answer = engine.AlphaOrder();
 
             var output = new List<char>
+=======
+            [Fact]
+            public void AreConsonantsInAlphabeticalOrder()
+            {
+                var input = "Short";
+
+                var engine = new ThingJonathanWillBuild(input);
+                var answer = engine.AlphaOrder();
+                var output = new List<char>
+                {
+                    'h', 'r', 'S', 't'
+                };
+
+                Assert.Equal(output, answer);
+            }
+            [Fact]
+            public void AreConsonantsOnlyReturnedOnce()
+>>>>>>> fef6d323b40122a5e839698921f64a7471daee4b
             {
                 'h', 'r', 'S', 't',
                 'h', 'P', 'r', 's'
             };
 
+<<<<<<< HEAD
         }
         //[Fact]
+=======
+                var engine = new ThingJonathanWillBuild(input);
+                var answer = engine.UsedOnce();
+                var output = new List<char>
+                {
+                    'S','h', 'p', 'r', 's', 't'
+                };
+>>>>>>> fef6d323b40122a5e839698921f64a7471daee4b
 
         //public void CanFindConsantants()
         //{

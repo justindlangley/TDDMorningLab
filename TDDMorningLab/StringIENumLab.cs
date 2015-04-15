@@ -12,7 +12,7 @@ namespace TDDMorningLab
 
     public class ThingJonathanWillBuild
     {
-        private string input;
+        public string input;
 
         public ThingJonathanWillBuild(string input)
         {
@@ -27,6 +27,7 @@ namespace TDDMorningLab
 
         public IEnumerable<char> GetConsonants()
         {
+<<<<<<< HEAD
 
             string AllConsonants = "BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz";
             string input = "Short Phrase";
@@ -34,6 +35,25 @@ namespace TDDMorningLab
                         where AllConsonants.IndexOf(ch) != -1
                         select ch;
             return query;
+=======
+            string AllConsonants = "BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz";
+            
+            var query = from ch in input
+                   where AllConsonants.IndexOf(ch) != -1
+                   select ch;
+                   return query;
+            
+        }
+
+        public IEnumerable<char> AlphaOrder()
+        {
+           string AllConsonants = "BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz";
+            var query = from ch in input 
+                        where AllConsonants.IndexOf(ch) != -1
+                        orderby char.ToLower(ch)
+                        select ch;
+                        return query; 
+>>>>>>> fef6d323b40122a5e839698921f64a7471daee4b
         }
 
 
