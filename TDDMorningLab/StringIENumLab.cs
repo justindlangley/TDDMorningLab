@@ -25,10 +25,29 @@ namespace TDDMorningLab
 
 
 
-        public object GetConsonants()
+        public IEnumerable<char> GetConsonants()
         {
-            throw new NotImplementedException();
-        }
+       
+        string AllConsonants = "BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz";
+        string input = "Short Phrase";
+        var query = from ch in input
+        where AllConsonants.IndexOf(ch) != -1
+        select ch;
+        return query;
+        
+
+        
+
+
+        //var output = new List<char>
+            //{
+            //    'S', 'h', 'r', 't',
+            //    'p', 'h','r','s'
+            //};
+            
+
+             }
     }
 
 }
+

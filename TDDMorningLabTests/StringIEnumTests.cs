@@ -24,7 +24,7 @@ namespace TDDMorningLabTests
             var output = new List<char>
             {
                 'S', 'h', 'r', 't',
-                'p', 'h','r','s'
+                'P', 'h','r','s'
             };
             
 
