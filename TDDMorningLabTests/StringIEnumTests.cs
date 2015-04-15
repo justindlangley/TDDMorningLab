@@ -26,18 +26,62 @@ namespace TDDMorningLabTests
                 'S', 'h', 'r', 't',
                 'P', 'h','r','s'
             };
-            
 
-            Assert.Equal(output, answer);
+        }
 
-                //Happy path is that there is a value, and the test passes
-                //Sad path is that there is no value, or the value is not in the correct format,
-                //and therefore the test fails
-            
+        [Fact]
+        public void AlphabeticalOrder()
+        {
+            var input = "Short phrase";
+
+            var engine = new ThingJonathanWillBuild(input);
+
+            var answer = engine.AlphaOrder();
+
+            var output = new List<char>
+            {
+                'h', 'r', 'S', 't',
+                'h', 'P', 'r', 's'
+            };
+
+        }
+        //[Fact]
+
+        //public void CanFindConsantants()
+        //{
+        //    var input = "Short phrase";
+
+        //    var engine = new ThingJonathanWillBuild(input);
+
+        //    var answer = engine.GetConsonants();
+
+        //    var output = new List<char>
+        //    {
+        //        'S', 'h', 'r', 't',
+        //        'P', 'h','r','s'
+        //    };
+
+        //}
+        //[Fact]
+        //public void CanFindConsantants()
+        //{
+        //    var input = "Short phrase";
+
+        //    var engine = new ThingJonathanWillBuild(input);
+
+        //    var answer = engine.GetConsonants();
+
+        //    var output = new List<char>
+        //    {
+        //        'S', 'h', 'r', 't',
+        //        'P', 'h','r','s'
+        //    };
+
+        //    Assert.Equal(output, answer);
+
+            //Happy path is that there is a value, and the test passes
+            //Sad path is that there is no value, or the value is not in the correct format,
+            //and therefore the test fails
+
         }
     }
-    
-    
-     
-    
-}
