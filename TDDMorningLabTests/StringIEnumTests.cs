@@ -15,7 +15,7 @@ namespace TDDMorningLabTests
         [Fact]
         public void CanFindConsantants()
         {
-            var input = "Short phrase";
+            var input = "Short";
 
             var engine = new ThingJonathanWillBuild(input);
 
@@ -23,8 +23,7 @@ namespace TDDMorningLabTests
 
             var output = new List<char>
             {
-                'S', 'h', 'r', 't',
-                'p', 'h','r','s'
+                'S', 'h', 'r', 't'
             };
             
 
@@ -38,14 +37,13 @@ namespace TDDMorningLabTests
             [Fact]
             public void AreConsonantsInAlphabeticalOrder()
             {
-                var input = "Short phrase";
+                var input = "Short";
 
                 var engine = new ThingJonathanWillBuild(input);
                 var answer = engine.AlphaOrder();
                 var output = new List<char>
                 {
-                    'h', 'h', 'p', 'r', 
-                    'r', 's', 's', 't'
+                    'h', 'r', 'S', 't'
                 };
 
                 Assert.Equal(output, answer);
@@ -59,7 +57,7 @@ namespace TDDMorningLabTests
                 var answer = engine.UsedOnce();
                 var output = new List<char>
                 {
-                    'h', 'p', 'r', 's', 't'
+                    'S','h', 'p', 'r', 's', 't'
                 };
 
                 Assert.Equal(output, answer);
